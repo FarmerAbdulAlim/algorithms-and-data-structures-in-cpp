@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 /*
 1) graph[u][v]=1, if there is an edge between u and v.
 2) color[x]=0 means the color of node x is WHITE and we haven't visited the node yet.
@@ -12,10 +11,10 @@ using namespace std;
 6) discovery_time[x]=t1 means the time(t1) when node x is first processed.
 7) finishing_time[x]=t1 means the time(t1) when the descendants of node x is finished.
 */
-int graph[1005][1005];
-int color[1005];
-int discovery_time[1005];
-int finishing_time[1005];
+int graph[105][105];
+int color[105];
+int discovery_time[105];
+int finishing_time[105];
 int t=0;
 int node;
 
@@ -25,7 +24,7 @@ void dfs(int u)
     discovery_time[u]=++t;
     for(int v=1;v<=node;v++)
     {
-        if(graph[u][v]color[v]==0)
+        if(graph[u][v]&&color[v]==0)
             dfs(v);
     }
     color[u]=2;
