@@ -74,5 +74,5 @@ Coming Soon...
 [Project Source Codes](./03-a-beautiful-animated-login-form/)
 
 <div align="right">
-    <b><a href="#1-number-theory">↥ Go to Top</a></b>
+    <b><a href="#1-number-theory">↥ Go to Number Theory</a></b>
 </div>
