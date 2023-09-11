@@ -44,23 +44,23 @@ Author: [Abdul Alim](https://www.youtube.com/@LearnWithAbdulAlim)
 
 ### 03. Data Structures
 
-| **No** | **Name of Algorithm/Problem**      | **Written Explanation**                                        | **Source Code** | **Video Explanation in Bangla** | **Video Explanation in English** |
-| ------ | ---------------------------------- | -------------------------------------------------------------- | --------------- | ------------------------------- | -------------------------------- |
-| 1      | [Binary Search](#01-binary-search) | [Read Now](#written-explanation-step-by-step-of-binary-search) | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 2      | Trie-01                            | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 3      | Trie-02                            | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 4      | Histogram With Stack               | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 5      | Segment Tree-1                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 6      | Segment Tree-2                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 7      | Segment Tree-3                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 8      | Segment Tree-4 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 9      | Segment Tree-5 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 10     | Segment Tree-6 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
-| 11     |                                    |                                                                |                 |                                 |                                  |
-| 12     |                                    |                                                                |                 |                                 |                                  |
-| 13     |                                    |                                                                |                 |                                 |                                  |
-| 14     |                                    |                                                                |                 |                                 |                                  |
-| 15     |                                    |                                                                |                 |                                 |                                  |
+| **No** | **Name of Algorithm/Problem**      | **Written Explanation**                                        | **Source Code**                            | **Video Explanation in Bangla** | **Video Explanation in English** |
+| ------ | ---------------------------------- | -------------------------------------------------------------- | ------------------------------------------ | ------------------------------- | -------------------------------- |
+| 1      | [Binary Search](#01-binary-search) | [Read Now](#written-explanation-step-by-step-of-binary-search) | [View Code](#source-code-of-binary-search) | [Watch Now]()                   | [Watch Now]()                    |
+| 2      | Trie-01                            | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 3      | Trie-02                            | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 4      | Histogram With Stack               | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 5      | Segment Tree-1                     | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 6      | Segment Tree-2                     | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 7      | Segment Tree-3                     | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 8      | Segment Tree-4 (with Lazy)         | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 9      | Segment Tree-5 (with Lazy)         | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 10     | Segment Tree-6 (with Lazy)         | [Read Now]()                                                   | [View Code]()                              | [Watch Now]()                   | [Watch Now]()                    |
+| 11     |                                    |                                                                |                                            |                                 |                                  |
+| 12     |                                    |                                                                |                                            |                                 |                                  |
+| 13     |                                    |                                                                |                                            |                                 |                                  |
+| 14     |                                    |                                                                |                                            |                                 |                                  |
+| 15     |                                    |                                                                |                                            |                                 |                                  |
 
 # 01. Binary Search
 
