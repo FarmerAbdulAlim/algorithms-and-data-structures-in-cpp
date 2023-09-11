@@ -2,7 +2,7 @@
 
 Author: [Abdul Alim](https://www.youtube.com/@LearnWithAbdulAlim)
 
-### 1. Number Theory
+### 01. Number Theory
 
 | **No** | **Name of Algorithm/Problem**              | **Written Explanation** | **Source Code** | **Video Explanation in Bangla** | **Video Explanation in English** |
 | ------ | ------------------------------------------ | ----------------------- | --------------- | ------------------------------- | -------------------------------- |
@@ -22,7 +22,7 @@ Author: [Abdul Alim](https://www.youtube.com/@LearnWithAbdulAlim)
 | 14     |                                            |                         |                 |                                 |                                  |
 | 15     |                                            |                         |                 |                                 |                                  |
 
-### 2. Graph Theory
+### 02. Graph Theory
 
 | **No** | **Name of Algorithm/Problem**        | **Written Explanation** | **Source Code** | **Video Explanation in Bangla** | **Video Explanation in English** |
 | ------ | ------------------------------------ | ----------------------- | --------------- | ------------------------------- | -------------------------------- |
@@ -42,36 +42,93 @@ Author: [Abdul Alim](https://www.youtube.com/@LearnWithAbdulAlim)
 | 14     |                                      |                         |                 |                                 |                                  |
 | 15     |                                      |                         |                 |                                 |                                  |
 
-# 03. A Beautiful Animated Login Form
+### 03. Data Structures
+
+| **No** | **Name of Algorithm/Problem**      | **Written Explanation**                                        | **Source Code** | **Video Explanation in Bangla** | **Video Explanation in English** |
+| ------ | ---------------------------------- | -------------------------------------------------------------- | --------------- | ------------------------------- | -------------------------------- |
+| 1      | [Binary Search](#01-binary-search) | [Read Now](#written-explanation-step-by-step-of-binary-search) | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 2      | Trie-01                            | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 3      | Trie-02                            | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 4      | Histogram With Stack               | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 5      | Segment Tree-1                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 6      | Segment Tree-2                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 7      | Segment Tree-3                     | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 8      | Segment Tree-4 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 9      | Segment Tree-5 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 10     | Segment Tree-6 (with Lazy)         | [Read Now]()                                                   | [View Code]()   | [Watch Now]()                   | [Watch Now]()                    |
+| 11     |                                    |                                                                |                 |                                 |                                  |
+| 12     |                                    |                                                                |                 |                                 |                                  |
+| 13     |                                    |                                                                |                 |                                 |                                  |
+| 14     |                                    |                                                                |                 |                                 |                                  |
+| 15     |                                    |                                                                |                 |                                 |                                  |
+
+# 01. Binary Search
 
 ### Difficulty: Easy(3/10)
 
 ### You Will Learn
 
-- CSS 2D and 3D Animation.
-- How to use css tricks to create a beautiful animated form.
+- কিভাবে Binary Search Algorithm কাজ করে।
+- একটা Sorted Array তে কোন Element কিভাবে **_O(log(n))_** time complexity তে সার্চ করা যায়।
 
-### Project Description
+### Problem Description
 
-This is a login page built with only HTML and CSS. After completing this project, you'll learn how to use css animations and some commonly used property to create a beautiful login form. Probably you know all of the css properties and their definations, but maybe you don't know how to use them to create some beautiful UI. This project is gonna teach the way!
+- একটা Sorted Array দেয়া আছে। এই Array থেকে **_O(log(n))_** তে কোন Element Search করে দেখতে হবে Element টি আছে কিনা। যদি থাকে তাহলে _Found_ আর না থাকলে _Not Found_ আউটপুট আঁকারে দেখাবে।
 
-### Project Screenshot
+### Written Explanation (Step by Step) of Binary Search
 
-_Click the image to view Live Project_
+### Source Code of Binary Search
 
-[![Animated Login Form](./03-a-beautiful-animated-login-form/images/animated-login-form.png)](https://travelerabdulalim.github.io/animated-login-form/)
+```cpp
+/*
+    Algorithm Used: Binary Search
+    Complexity: O(log(N))
+    Solution Approach:
+*/
 
-### Live Project Link
+#include <bits/stdc++.h>
+using namespace std;
+#define LL long long
+#define MAX 100009
 
-[Live Project Link](https://travelerabdulalim.github.io/animated-login-form/)
+int a[MAX];
 
-### Video Explanation
+bool binarySearch(int left, int right, int value)
+{
+    while (left <= right)
+    {
+        int mid = (left + right) / 2;
+        if (a[mid] == value)
+            return 1;
+        else if (a[mid] < value)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    }
+    return 0;
+}
 
-Coming Soon...
+int main()
+{
+    int i, j, k, n, m, d, value;
+    while (cin >> n)
+    {
+        for (i = 0; i < n; i++)
+            cin >> a[i];
+        sort(a, a + n);
+        cin >> value;
+        if (binarySearch(0, n - 1, value))
+            cout << "Found" << endl;
+        else
+            cout << "Not Found" << endl;
+    }
+    return 0;
+}
+```
 
-### Project Source Codes
+### Video Explanation in Bangla
 
-[Project Source Codes](./03-a-beautiful-animated-login-form/)
+### Video Explanation in English
 
 <div align="right">
     <b><a href="#1-number-theory">↥ Go to Number Theory</a></b>

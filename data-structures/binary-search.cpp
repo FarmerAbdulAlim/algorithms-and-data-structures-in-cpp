@@ -8,8 +8,8 @@
  ************************************************************************/
 
 /*
-    Algorithm Used:
-    Complexity:
+    Algorithm Used: Binary Search
+    Complexity: O(log(N))
     Solution Approach:
 */
 
@@ -18,29 +18,36 @@ using namespace std;
 #define LL long long
 #define MAX 100009
 
-int a[MAX], n;
+int a[MAX];
 
-bool binarySearch(int target)
+bool binarySearch(int left, int right, int value)
 {
-    int left = 0, right = n-1;
-    while(left<=right) 
+    while (left <= right)
     {
-        
+        int mid = (left + right) / 2;
+        if (a[mid] == value)
+            return 1;
+        else if (a[mid] < value)
+            left = mid + 1;
+        else
+            right = mid - 1;
     }
+    return 0;
 }
 
 int main()
 {
-    int m, d, test, target;
-    cin >> test;
-    while (test--)
+    int i, j, k, n, m, d, value;
+    while (cin >> n)
     {
-        cin >> n;
-        for (int i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
             cin >> a[i];
-        if(binarySearch(target)) printf("%d is Found\n", target);
-        else printf("%d is Not Found\n", target);
-        
+        sort(a, a + n);
+        cin >> value;
+        if (binarySearch(0, n - 1, value))
+            cout << "Found" << endl;
+        else
+            cout << "Not Found" << endl;
     }
     return 0;
 }
